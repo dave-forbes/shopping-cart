@@ -60,7 +60,7 @@ h6 {
 }
 
 .hero {
-  height: 700px;
+  height: 600px;
   position: relative;
 }
 
@@ -186,5 +186,6 @@ h3 {
   font-weight: 600;
 }
 .call-to-action button:hover {
-  background-color: rgb(255, 209, 183);
+  background-color: rgb(255, 255, 255);
+  color: black
 }
