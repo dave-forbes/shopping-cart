@@ -1,8 +1,7 @@
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ShopAll from "./pages/ShopAll";
+import Shop from "./pages/Shop";
 import OurStory from "./pages/OurStory";
-import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -15,16 +14,12 @@ const Router = () => {
       children: [
         { index: true, element: <Home /> },
         {
-          path: "/shopall",
-          element: <ShopAll />,
+          path: "/shop",
+          element: <Shop />,
         },
         {
           path: "/ourstory",
           element: <OurStory />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
         },
       ],
     },
