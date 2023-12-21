@@ -17,7 +17,7 @@ export default function App() {
           <ShoppingBag />
         </div>
       </header>
-      <nav>
+      <nav className="main-nav">
         <ul>
           <Link to="/">Home</Link>
           <Link to="/shopall">Shop all</Link>
