@@ -64,6 +64,11 @@ h6 {
   position: relative;
 }
 
+section {
+  height: 600px;
+  background-color: rgb(250, 245, 241);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -124,6 +129,8 @@ nav a {
   cursor: pointer;
   padding: 1rem;
   font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
 
 nav a:hover,
@@ -176,7 +183,7 @@ h3 {
   gap: 1rem;
 }
 
-.call-to-action button {
+.call-to-action a {
   background-color: transparent;
   border: 2px solid white;
   padding: 1rem;
@@ -184,8 +191,17 @@ h3 {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
 }
-.call-to-action button:hover {
+.call-to-action a:hover {
   background-color: rgb(255, 255, 255);
   color: black
+}
+
+.error-page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
 }
