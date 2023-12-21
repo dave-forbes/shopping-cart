@@ -1,0 +1,30 @@
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1;
+  left: 0;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.606);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.hide {
+  opacity: 0;
+  height: 0;
+}
+
+.img {
+  aspect-ratio: 1;
+  height: inherit;
+  object-fit: cover;
+}

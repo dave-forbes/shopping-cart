@@ -1,0 +1,32 @@
+.container {
+  padding-block: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img {
+  width: 400px;
+  aspect-ratio: 1;
+}
+
+.a {
+  text-decoration: none;
+  background-color: lightgrey;
+  color: black;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.a:hover {
+  background-color: black;
+  color: white;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
