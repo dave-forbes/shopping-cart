@@ -1,3 +1,7 @@
 export default function OurStory() {
-  return <h1>Our Story</h1>;
+  return (
+    <section>
+      <h1>Our Story</h1>
+    </section>
+  );
 }

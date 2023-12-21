@@ -1,3 +1,7 @@
 export default function ShopAll() {
-  return <h1>Welcome to the shop</h1>;
+  return (
+    <section>
+      <h1>Welcome to the shop</h1>
+    </section>
+  );
 }
