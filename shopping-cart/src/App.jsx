@@ -3,7 +3,7 @@ import Logo from "./assets/svg/logo";
 import Search from "./assets/svg/Search";
 import ShoppingBag from "./assets/svg/ShoppingBag";
 import { Link, Outlet } from "react-router-dom";
-import SignUp from "./components/SignUp";
+import SignUp from "./components/SignUp/SignUp";
 
 export default function App() {
   return (
