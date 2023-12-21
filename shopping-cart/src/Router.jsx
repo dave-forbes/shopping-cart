@@ -4,6 +4,7 @@ import Shop from "./pages/Shop";
 import OurStory from "./pages/OurStory";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
+import ProductDetail from "./components/ProductDetail/ProductDetail";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const Router = () => {
         {
           path: "/ourstory",
           element: <OurStory />,
+        },
+        {
+          path: "/products/:productId",
+          element: <ProductDetail />,
         },
       ],
     },
