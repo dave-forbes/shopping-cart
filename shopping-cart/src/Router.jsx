@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ShopAll from "./pages/ShopAll";
 import OurStory from "./pages/OurStory";
 import Contact from "./pages/Contact";
-import Hero from "./components/hero";
+import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 
 const Router = () => {
@@ -13,7 +13,7 @@ const Router = () => {
       element: <App />,
       errorElement: <ErrorPage />,
       children: [
-        { index: true, element: <Hero /> },
+        { index: true, element: <Home /> },
         {
           path: "/shopall",
           element: <ShopAll />,
