@@ -1,6 +1,6 @@
 import { useState } from "react";
 import shopPhoto from "../assets/img/small/josiah-weiss-8sjBzL1IyMo-unsplash small.jpg";
-import ProductList from "../components/ProductList";
+import ProductList from "../components/ProductList/ProductList";
 
 export default function Shop() {
   const [category, setCategory] = useState("all");
