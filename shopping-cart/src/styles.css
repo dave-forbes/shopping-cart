@@ -65,7 +65,7 @@ h6 {
 }
 
 section {
-  height: 600px;
+  /* height: 600px; */
   background-color: rgb(250, 245, 241);
 }
 
@@ -116,7 +116,7 @@ li {
   list-style: none;
 }
 
-nav ul {
+.main-nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -124,7 +124,7 @@ nav ul {
   margin-inline: auto;
 }
 
-nav a {
+.main-nav a {
   list-style: none;
   cursor: pointer;
   padding: 1rem;
@@ -204,4 +204,39 @@ h3 {
   display: grid;
   place-content: center;
   gap: 2rem;
+}
+
+.product-card {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.inventory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.shop-nav {
+  padding-top: 2rem;
+}
+
+.shop-nav ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0 0 0 2rem;
+}
+
+.shop-nav button {
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+
+.shop-nav button:hover, .shop-nav button:focus {
+  background-color: black;
+  color:white;
 }
