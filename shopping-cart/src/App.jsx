@@ -1,9 +1,8 @@
 import "./styles.css";
-import Hero from "./components/hero";
 import Logo from "./assets/svg/logo";
 import Search from "./assets/svg/Search";
 import ShoppingBag from "./assets/svg/ShoppingBag";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function App() {
   return (
@@ -23,17 +22,10 @@ export default function App() {
           <Link to="/">Home</Link>
           <Link to="/shopall">Shop all</Link>
           <Link to="/ourstory">Our story</Link>
-          <Link to="/ourcraft">Our Craft</Link>
           <Link to="/contact">Contact</Link>
         </ul>
       </nav>
-      <section className="hero">
-        <Hero />
-        <div className="call-to-action">
-          <h2>Shop all bags</h2>
-          <button>Shop now</button>
-        </div>
-      </section>
+      <Outlet />
       <footer>
         <div className="info">
           <div>
