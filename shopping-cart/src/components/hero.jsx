@@ -1,4 +1,4 @@
-import heroImage from "../assets/img/nguyen-le-viet-anh-POcLQMo2COg-unsplash.jpg";
+import heroImage from "../assets/img/original/nguyen-le-viet-anh-POcLQMo2COg-unsplash.jpg";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
