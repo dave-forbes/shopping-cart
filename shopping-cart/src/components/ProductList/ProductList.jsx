@@ -24,7 +24,7 @@ const ProductList = ({ category }) => {
             <img className={styles.img} src={item.imgsrc} alt={item.name} />
             <div className={hover === item.id ? styles.overlay : styles.hide}>
               <p>{item.name}</p>
-              <p>{item.price}</p>
+              <p>£{item.price}</p>
             </div>
           </div>
         </Link>

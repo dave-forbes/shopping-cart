@@ -35,7 +35,7 @@ const ProductDetail = () => {
       <div className={styles.details}>
         <h2 className={styles.title}>{product.name}</h2>
         <p>{product.description}</p>
-        <p className={styles.price}>{product.price}</p>
+        <p className={styles.price}>£{product.price}</p>
         <button onClick={() => addToBag(productId)} className={styles.button}>
           Add to Bag
         </button>

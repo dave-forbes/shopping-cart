@@ -4,7 +4,7 @@
     "imgsrc": "/src/assets/img/small/adam-hornyak-7e-VK6U-3Fs-unsplash small.jpg",
     "name": "Yellow backpack",
     "category": "adventure",
-    "price": "£79.99",
+    "price": 79.99,
     "description": "Introducing our Yellow Retro Backpack, a vibrant and stylish companion for your moderate adventure activities. Crafted with a nod to retro aesthetics, this backpack combines a bold yellow hue with timeless design elements, making it both eye-catching and functional. The backpack is equipped with ample storage space, including multiple compartments and pockets, ensuring you can easily organize and access your essentials on the go. Its sturdy construction and durable materials make it suitable for moderate outdoor adventures, providing reliability and comfort. Whether you're exploring the urban jungle or embarking on a weekend hike, this Yellow Retro Backpack is the perfect blend of fashion and functionality for your active lifestyle."
   },
   {
@@ -12,7 +12,7 @@
     "imgsrc": "/src/assets/img/small/ali-kazal-9aZ3T1q83CM-unsplash small.jpg",
     "name": "Green backpack",
     "category": "adventure",
-    "price": "£99.99",
+    "price": 99.99,
     "description": "Introducing our Green Adventure Backpack—an ideal companion for extreme adventurers. With its bold green hue and robust design, this larger-sized backpack offers increased capacity and durability for challenging terrains. Packed with specialized compartments, reinforced stitching, and heavy-duty zippers, it's tailored for longer journeys and more daring expeditions. Elevate your outdoor experience with a backpack that combines functionality, durability, and a bold sense of style."
   },
   {
@@ -20,7 +20,7 @@
     "imgsrc": "/src/assets/img/small/aniket-bhattacharya-VOvAl8bEOnE-unsplash small.jpg",
     "name": "Dark Green backpack",
     "category": "adventure",
-    "price": "£79.99",
+    "price": 79.99,
     "description": "Introducing our Dark Green Retro Backpack, a vibrant and stylish companion for your moderate adventure activities. Crafted with a nod to retro aesthetics, this backpack combines a bold yellow hue with timeless design elements, making it both eye-catching and functional. The backpack is equipped with ample storage space, including multiple compartments and pockets, ensuring you can easily organize and access your essentials on the go. Its sturdy construction and durable materials make it suitable for moderate outdoor adventures, providing reliability and comfort. Whether you're exploring the urban jungle or embarking on a weekend hike, this Yellow Retro Backpack is the perfect blend of fashion and functionality for your active lifestyle."
   },
   {
@@ -28,7 +28,7 @@
     "imgsrc": "/src/assets/img/small/edgar-S1mSsru32QM-unsplash small.jpg",
     "name": "Grey backpack",
     "category": "everyday",
-    "price": "£49.99",
+    "price": 49.99,
     "description": "Meet our Small Grey Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities. With just the right amount of space for your daily essentials, this backpack seamlessly blends style and functionality. Whether you're commuting to work, heading to a cafe, or exploring the city, the Small Grey Everyday Backpack is your go-to accessory for a minimalist and organized lifestyle."
   },
   {
@@ -36,7 +36,7 @@
     "imgsrc": "/src/assets/img/small/haupes-6hpJZcqWt4I-unsplash small.jpg",
     "name": "Green backpack",
     "category": "adventure",
-    "price": "£59.99",
+    "price": 59.99,
     "description": "Introducing our Small Green Organizer Backpack—a compact and vibrant solution for your everyday needs. The lively green color adds a touch of personality, while the thoughtfully designed extra compartments provide enhanced organization. Perfectly sized for on-the-go adventures, this backpack combines style with functionality. Whether you're navigating city streets or tackling daily tasks, the Small Green Organizer Backpack keeps you stylishly efficient with its additional storage options for a well-organized and hassle-free experience."
   },
   {
@@ -44,7 +44,7 @@
     "imgsrc": "/src/assets/img/small/jason-garcia-X4ZM5AHXG70-unsplash small.jpg",
     "name": "Grey backpack",
     "category": "everyday",
-    "price": "£49.99",
+    "price": 49.99,
     "description": "Meet our Small Grey Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities. With just the right amount of space for your daily essentials, this backpack seamlessly blends style and functionality. Whether you're commuting to work, heading to a cafe, or exploring the city, the Small Grey Everyday Backpack is your go-to accessory for a minimalist and organized lifestyle."
   },
   {
@@ -52,7 +52,7 @@
     "imgsrc": "/src/assets/img/small/julie-dransfield-fDmtG32tP08-unsplash small.jpg",
     "name": "Blue backpack",
     "category": "everyday",
-    "price": "£59.99",
+    "price": 59.99,
     "description": "Meet our Small Grey Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities. With just the right amount of space for your daily essentials, this backpack seamlessly blends style and functionality. Whether you're commuting to work, heading to a cafe, or exploring the city, the Small Grey Everyday Backpack is your go-to accessory for a minimalist and organized lifestyle."
   },
   {
@@ -60,7 +60,7 @@
     "imgsrc": "/src/assets/img/small/luis-quintero-8TSqJoI-NVs-unsplash small.jpg",
     "name": "Grey backpack",
     "category": "everyday",
-    "price": "£49.99",
+    "price": 49.99,
     "description": "Meet our Small Grey Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities. With just the right amount of space for your daily essentials, this backpack seamlessly blends style and functionality. Whether you're commuting to work, heading to a cafe, or exploring the city, the Small Grey Everyday Backpack is your go-to accessory for a minimalist and organized lifestyle."
   },
   {
@@ -68,7 +68,7 @@
     "imgsrc": "/src/assets/img/small/oriol-pascual-l5VCmqQbP_g-unsplash small.jpg",
     "name": "Blue backpack",
     "category": "adventure",
-    "price": "£59.99",
+    "price": 59.99,
     "description": "Meet our Small Grey Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities. With just the right amount of space for your daily essentials, this backpack seamlessly blends style and functionality. Whether you're commuting to work, heading to a cafe, or exploring the city, the Small Grey Everyday Backpack is your go-to accessory for a minimalist and organized lifestyle."
   },
   {
@@ -76,7 +76,7 @@
     "imgsrc": "/src/assets/img/small/pursuit-retro--miQCjAA3EY-unsplash small.jpg",
     "name": "Blue backpack",
     "category": "adventure",
-    "price": "£79.99",
+    "price": 79.99,
     "description": "Introducing our Dark Blue Retro Backpack, a vibrant and stylish companion for your moderate adventure activities. Crafted with a nod to retro aesthetics, this backpack combines a bold yellow hue with timeless design elements, making it both eye-catching and functional. The backpack is equipped with ample storage space, including multiple compartments and pockets, ensuring you can easily organize and access your essentials on the go. Its sturdy construction and durable materials make it suitable for moderate outdoor adventures, providing reliability and comfort. Whether you're exploring the urban jungle or embarking on a weekend hike, this Yellow Retro Backpack is the perfect blend of fashion and functionality for your active lifestyle."
   },
   {
@@ -84,7 +84,7 @@
     "imgsrc": "/src/assets/img/small/studio-crevettes-Ft3IiktwwzQ-unsplash small.jpg",
     "name": "Grey backpack",
     "category": "everyday",
-    "price": "£49.99",
+    "price": 49.99,
     "description": "Meet our Small Grey Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities."
   },
   {
@@ -92,7 +92,7 @@
     "imgsrc": "/src/assets/img/small/sun-lingyan-_H0fjILH5Vw-unsplash small.jpg",
     "name": "Grey backpack",
     "category": "everyday",
-    "price": "£49.99",
+    "price": 49.99,
     "description": "Meet our Small Grey Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities. With just the right amount of space for your daily essentials, this backpack seamlessly blends style and functionality. Whether you're commuting to work, heading to a cafe, or exploring the city, the Small Grey Everyday Backpack is your go-to accessory for a minimalist and organized lifestyle."
   },
   {
@@ -100,7 +100,7 @@
     "imgsrc": "/src/assets/img/small/wiser-by-the-mile-3o-X8WJOP5E-unsplash small.jpg",
     "name": "Red backpack",
     "category": "everyday",
-    "price": "£49.99",
+    "price": 49.99,
     "description": "Meet our Small Red Everyday Backpack—a sleek and versatile companion for your daily adventures. The understated grey color adds a touch of sophistication, while the compact design makes it perfect for on-the-go activities. With just the right amount of space for your daily essentials, this backpack seamlessly blends style and functionality. Whether you're commuting to work, heading to a cafe, or exploring the city, the Small Grey Everyday Backpack is your go-to accessory for a minimalist and organized lifestyle."
   }
 ]
