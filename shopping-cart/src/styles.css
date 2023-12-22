@@ -78,24 +78,6 @@ header {
   position: relative;
 }
 
-.cart-search {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(-25%, -50%);
-  display: flex;
-  gap: 1rem;
-  width: 120px;
-}
-
-.cart-search svg {
-  cursor: pointer;
-}
-
-.cart-search svg:hover {
-  fill: white;
-}
-
 .header-title {
   display: flex;
   align-items: center;
