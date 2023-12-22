@@ -1,0 +1,29 @@
+.inventory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.nav {
+  padding-top: 2rem;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0 0 0 2rem;
+}
+
+.nav button {
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+
+.nav button:hover, .nav button:focus {
+  background-color: black;
+  color:white;
+}

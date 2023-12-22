@@ -1,11 +1,12 @@
 import foundersPhoto from "../../assets/img/small/alex-azabache-rwCjbjaK-Zs-unsplash small.jpg";
+import styles from "./OurStory.module.css";
 
 const OurStory = () => {
   return (
-    <section className="our-story">
-      <div className="story-content">
-        <img src={foundersPhoto} alt="Founders" className="founders-photo" />
-        <div>
+    <section>
+      <div className={styles.content}>
+        <img src={foundersPhoto} alt="Founders" className={styles.img} />
+        <div className={styles.text}>
           <p>
             Founded with a passion for the great outdoors, Backpack and Sack is
             the brainchild of a group of adventure enthusiasts. We believe in

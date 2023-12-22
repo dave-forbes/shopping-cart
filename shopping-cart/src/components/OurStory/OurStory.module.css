@@ -1,0 +1,22 @@
+.content {
+  display: flex;
+  gap: 4rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 4rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+}
+
+.img {
+  height: 500px;
+  aspect-ratio: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
