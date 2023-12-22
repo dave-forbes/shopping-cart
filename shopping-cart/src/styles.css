@@ -194,36 +194,6 @@ h3 {
   gap: 2rem;
 }
 
-.inventory {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  justify-items: center;
-}
-
-.shop-nav {
-  padding-top: 2rem;
-}
-
-.shop-nav ul {
-  display: flex;
-  gap: 1rem;
-  padding: 0 0 0 2rem;
-}
-
-.shop-nav button {
-  border: none;
-  cursor: pointer;
-  padding: 0.7rem 1rem;
-  border-radius: 5px;
-}
-
-.shop-nav button:hover, .shop-nav button:focus {
-  background-color: black;
-  color:white;
-}
-
 .sign-up {
   padding-block: 5rem;
   background-color: var(--primary-color);
@@ -232,43 +202,9 @@ h3 {
   align-items: center;
 }
 
-.focus {
+/* .focus {
   background-color: black;
   color:white;
-}
+} */
 
-.shop-header {
-  padding: 3rem;
-  display: flex;
-  max-width: 1200px;
-  margin-inline: auto;
-  align-items: center;
-  gap: 2rem;
-}
 
-.shop-header p {
-  font-size: 1.2rem;
-}
-
-.shop-header img {
-  width: 300px;
-  aspect-ratio: 1;
-}
-
-.story-content {
-  display: flex;
-  gap: 2rem;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-block: 4rem;
-}
-
-.story-content p {
-  font-size: 1.2rem;
-  margin-block: 3rem;
-}
-
-.founders-photo {
-  width: 500px;
-  aspect-ratio: 1;
-}
