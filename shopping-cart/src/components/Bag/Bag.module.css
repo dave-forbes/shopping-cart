@@ -13,7 +13,7 @@
   aspect-ratio: 1;
 }
 
-.h2, .tableContainer, .summary {
+.h2, .tableContainer, .summary, .emptyBag {
   max-width: 1200px;
   margin-inline: auto;
 }
