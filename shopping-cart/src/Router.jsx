@@ -1,9 +1,9 @@
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Shop from "./pages/Shop";
-import OurStory from "./pages/OurStory";
-import Home from "./pages/Home";
-import ErrorPage from "./pages/ErrorPage";
+import Shop from "./components/Shop/Shop";
+import OurStory from "./components/OurStory/OurStory";
+import Home from "./components/Home/Home";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import Bag from "./components/Bag/Bag";
 
