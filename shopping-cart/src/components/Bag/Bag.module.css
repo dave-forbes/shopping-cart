@@ -64,3 +64,14 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+.remove div {
+  display: flex;
+  justify-content: center;
+}
+
+.remove svg {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}

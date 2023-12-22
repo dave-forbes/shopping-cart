@@ -1,6 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import styles from "./Bag.module.css";
 import QuantitySelect from "../QuantitySelect/QuantitySelect";
+import Trash from "../../assets/svg/Trash";
 
 const Bag = () => {
   const [bag, setBag] = useOutletContext();
@@ -22,7 +23,9 @@ const Bag = () => {
   const removeOne = (product) => {
     const bagCopy = [...bag];
     const foundProduct = bagCopy.find((item) => item.id === product.id);
-    foundProduct.quantity = foundProduct.quantity - 1;
+    foundProduct.quantity > 0
+      ? (foundProduct.quantity = foundProduct.quantity - 1)
+      : (foundProduct.quantity = 0);
     setBag(bagCopy);
   };
 
@@ -53,6 +56,7 @@ const Bag = () => {
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Subtotal</th>
+                <th>Remove</th>
               </tr>
             </thead>
             {bag.map((product) => (
@@ -90,9 +94,12 @@ const Bag = () => {
                     </span>
                   </th>
                   <th className={styles.remove}>
-                    <button onClick={() => removeFromBag(product)}>
+                    {/* <button onClick={() => removeFromBag(product)}>
                       Remove
-                    </button>
+                    </button> */}
+                    <div>
+                      <Trash onClick={() => removeFromBag(product)} />
+                    </div>
                   </th>
                 </tr>
               </tbody>
