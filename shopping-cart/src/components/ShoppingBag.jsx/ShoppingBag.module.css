@@ -1,16 +1,14 @@
 .container {
   position: absolute;
   top: 15px;
-   right: 20px;
-   width: 50px;
-}
-
-.svg {
+  right: 20px;
+  width: 50px;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
-.svg:hover {
-  fill: white;
+.container:hover {
+  transform: scale(1.2);
 }
 
 .counter {
