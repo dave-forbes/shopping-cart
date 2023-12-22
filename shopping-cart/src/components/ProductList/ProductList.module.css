@@ -18,6 +18,10 @@
   transition: opacity 0.3s;
 }
 
+.overlay p {
+  font-size: 2rem;
+}
+
 .hide {
   opacity: 0;
   height: 0;
