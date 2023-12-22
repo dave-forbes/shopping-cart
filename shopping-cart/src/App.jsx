@@ -1,11 +1,17 @@
 import "./styles.css";
 import Logo from "./assets/svg/logo";
-import Search from "./assets/svg/Search";
-import ShoppingBag from "./assets/svg/ShoppingBag";
+import ShoppingBag from "./components/ShoppingBag.jsx/ShoppingBag";
 import { Link, Outlet } from "react-router-dom";
 import SignUp from "./components/SignUp/SignUp";
+import { useState, useEffect } from "react";
 
 export default function App() {
+  const [bag, setBag] = useState([]);
+
+  useEffect(() => {
+    console.log(bag);
+  }, [bag]);
+
   return (
     <>
       <header>
@@ -13,10 +19,7 @@ export default function App() {
           <h1>Backpack and Sack</h1>
           <Logo />
         </div>
-        <div className="cart-search">
-          <Search />
-          <ShoppingBag />
-        </div>
+        <ShoppingBag bag={bag} />
       </header>
       <nav className="main-nav">
         <ul>
@@ -25,7 +28,7 @@ export default function App() {
           <Link to="/ourstory">Our story</Link>
         </ul>
       </nav>
-      <Outlet />
+      <Outlet context={[bag, setBag]} />
       <SignUp />
       <footer>
         <div className="info">
