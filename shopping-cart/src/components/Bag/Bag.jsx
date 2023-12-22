@@ -1,18 +1,33 @@
 import { useOutletContext } from "react-router-dom";
 import styles from "./Bag.module.css";
+import QuantitySelect from "../QuantitySelect/QuantitySelect";
 
 const Bag = () => {
   const [bag, setBag] = useOutletContext();
 
   const removeFromBag = (product) => {
     const bagCopy = [...bag];
+    const index = bagCopy.findIndex((item) => item.id === product.id);
+    bagCopy.splice(index, 1);
+    setBag(bagCopy);
+  };
+
+  const addOne = (product) => {
+    const bagCopy = [...bag];
+    const foundProduct = bagCopy.find((item) => item.id === product.id);
+    foundProduct.quantity = foundProduct.quantity + 1;
+    setBag(bagCopy);
+  };
+
+  const removeOne = (product) => {
+    const bagCopy = [...bag];
     const foundProduct = bagCopy.find((item) => item.id === product.id);
     foundProduct.quantity = foundProduct.quantity - 1;
-    if (foundProduct.quantity === 0) {
-      const index = bagCopy.findIndex((item) => item.id === foundProduct.id);
-      bagCopy.splice(index, 1);
-    }
     setBag(bagCopy);
+  };
+
+  const changeQuantity = (e) => {
+    console.log(e);
   };
 
   const calcSubtotal = (price, quantity) => {
@@ -54,7 +69,14 @@ const Bag = () => {
                     </span>
                   </th>
                   <th>
-                    <span>{product.quantity}</span>
+                    <span>
+                      <QuantitySelect
+                        quantity={product.quantity}
+                        clickAdd={() => addOne(product)}
+                        clickSubtract={() => removeOne(product)}
+                        changeQuantity={() => changeQuantity}
+                      />
+                    </span>
                   </th>
                   <th>
                     <span>
