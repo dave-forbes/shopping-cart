@@ -1,15 +1,32 @@
 import productData from "../../data/productData.json";
 import PropTypes from "prop-types";
 import styles from "./ProductList.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+const shuffleArray = (array) => {
+  const arrayCopy = [...array];
+  for (let i = 0; i < arrayCopy.length; i++) {
+    let j = Math.floor(Math.random() * (i + 1));
+    let temp = arrayCopy[i];
+    arrayCopy[i] = arrayCopy[j];
+    arrayCopy[j] = temp;
+  }
+  return arrayCopy;
+};
+
 const ProductList = ({ category }) => {
-  const filteredProducts = productData.filter(
+  const [shuffledProducts, setShuffledProducts] = useState([]);
+  const [hover, setHover] = useState("");
+
+  useEffect(() => {
+    const shuffled = shuffleArray(productData);
+    setShuffledProducts(shuffled);
+  }, []);
+
+  const filteredProducts = shuffledProducts.filter(
     (item) => item.category === category || category === "all"
   );
-
-  const [hover, setHover] = useState("");
 
   return (
     <>
