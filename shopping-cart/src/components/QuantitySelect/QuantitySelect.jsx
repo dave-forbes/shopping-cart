@@ -15,6 +15,8 @@ const QuantitySelect = ({ quantity, clickAdd, clickSubtract }) => {
 
 QuantitySelect.propTypes = {
   quantity: PropTypes.number,
+  clickAdd: PropTypes.func,
+  clickSubtract: PropTypes.func,
 };
 
 export default QuantitySelect;

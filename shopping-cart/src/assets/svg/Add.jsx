@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Add = ({ onClick }) => {
   return (
     <svg
@@ -30,6 +32,10 @@ const Add = ({ onClick }) => {
       </g>
     </svg>
   );
+};
+
+Add.propTypes = {
+  onClick: PropTypes.func,
 };
 
 export default Add;

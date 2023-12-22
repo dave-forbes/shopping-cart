@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Subtract = ({ onClick }) => {
   return (
     <svg
@@ -30,6 +32,10 @@ const Subtract = ({ onClick }) => {
       </g>
     </svg>
   );
+};
+
+Subtract.propTypes = {
+  onClick: PropTypes.func,
 };
 
 export default Subtract;
