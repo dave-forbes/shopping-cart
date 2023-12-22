@@ -54,6 +54,13 @@ h6 {
 
 /* RESET */
 
+:root {
+  --primary-color: rgb(250, 224, 204);
+  --section-bg-color: rgb(255, 251, 248);
+  --secondary-color: rgb(209, 190, 175);
+  --footer-color:rgb(57, 53, 51);
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -65,8 +72,7 @@ h6 {
 }
 
 section {
-  /* height: 600px; */
-  background-color: rgb(250, 245, 241);
+  background-color: var(--section-bg-color)
 }
 
 header {
@@ -74,7 +80,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 209, 183);
+  background-color: var(--primary-color);
   position: relative;
 }
 
@@ -128,7 +134,7 @@ img {
 }
 
 .info {
-  background-color: rgb(198, 184, 176);
+  background-color: var(--secondary-color);
   padding-block: 2rem;
   display: flex;
   justify-content: space-evenly;
@@ -137,7 +143,7 @@ img {
 .legal {
   text-align: center;
   padding: 1rem;
-  background-color: rgb(57, 52, 49);
+  background-color: var(--footer-color);
   color: white;
 }
 
@@ -190,7 +196,7 @@ h3 {
 
 .inventory {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   padding: 2rem;
   justify-items: center;
@@ -220,7 +226,7 @@ h3 {
 
 .sign-up {
   padding-block: 5rem;
-  background-color: rgb(255, 209, 183);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
