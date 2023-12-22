@@ -15,10 +15,9 @@
 }
 
 .quantity {
-  display: flex;
-  align-items: center;
   background-color: white;
   width: 2rem;
   height: 2rem;
-  border: 1px solid black
+  border: 1px solid black;
+  text-align: center;
 }
