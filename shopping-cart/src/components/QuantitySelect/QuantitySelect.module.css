@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.container input {
+  width: 2rem;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black
+}
