@@ -33,6 +33,11 @@
   align-items: center;
 }
 
+.item th span {
+  display: flex;
+  justify-content: center;
+}
+
 .dividerContainer {
   padding-block: 1rem;
 }
