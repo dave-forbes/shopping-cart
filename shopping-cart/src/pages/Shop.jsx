@@ -22,19 +22,19 @@ export default function Shop() {
       <nav className="shop-nav">
         <ul>
           <button
-            className={category === "all" && "focus"}
+            className={category === "all" ? "focus" : ""}
             onClick={() => setCategory("all")}
           >
             All
           </button>
           <button
-            className={category === "everyday" && "focus"}
+            className={category === "everyday" ? "focus" : ""}
             onClick={() => setCategory("everyday")}
           >
             Everyday
           </button>
           <button
-            className={category === "adventure" && "focus"}
+            className={category === "adventure" ? "focus" : ""}
             onClick={() => setCategory("adventure")}
           >
             Adventure
