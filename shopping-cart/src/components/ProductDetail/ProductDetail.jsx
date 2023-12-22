@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import productData from "../../data/productData.json";
 import { useParams, useOutletContext } from "react-router-dom";
 import styles from "./ProductDetail.module.css";
+import productData from "../../data/productData.json";
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -9,7 +9,15 @@ const ProductDetail = () => {
   const [bag, setBag] = useOutletContext();
 
   const addToBag = () => {
-    setBag(bag.concat(product));
+    const bagCopy = [...bag];
+    const duplicate = bagCopy.find((bag) => bag.id === productId);
+    if (duplicate) {
+      product.quantity = product.quantity + 1;
+    } else {
+      product.quantity = 1;
+      bagCopy.push(product);
+    }
+    setBag(bagCopy);
   };
 
   const findProduct = (productId) => {
@@ -36,7 +44,7 @@ const ProductDetail = () => {
         <h2 className={styles.title}>{product.name}</h2>
         <p>{product.description}</p>
         <p className={styles.price}>£{product.price}</p>
-        <button onClick={() => addToBag(productId)} className={styles.button}>
+        <button onClick={() => addToBag()} className={styles.button}>
           Add to Bag
         </button>
       </div>
