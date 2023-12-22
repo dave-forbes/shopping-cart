@@ -8,7 +8,9 @@ export default function ShoppingBag({ bag }) {
     <Link to="/bag">
       <div className={styles.container}>
         <ShoppingBagSVG className={styles.svg} />
-        <div className={styles.counter}>{bag.length}</div>
+        <div className={styles.counter}>
+          {bag.reduce((curr, acc) => curr + acc.quantity, 0)}
+        </div>
       </div>
     </Link>
   );
