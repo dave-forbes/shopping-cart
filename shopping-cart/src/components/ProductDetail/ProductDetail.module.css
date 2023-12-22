@@ -40,3 +40,9 @@
 .price {
   font-size: 1.5rem;
 }
+
+.addToBag {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
