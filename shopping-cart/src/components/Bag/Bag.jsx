@@ -26,8 +26,12 @@ const Bag = () => {
     setBag(bagCopy);
   };
 
-  const changeQuantity = (e) => {
-    console.log(e);
+  const updateQuantity = (product, newQuantity) => {
+    if (!newQuantity || newQuantity > 50) newQuantity = 0;
+    const bagCopy = [...bag];
+    const foundProduct = bagCopy.find((item) => item.id === product.id);
+    foundProduct.quantity = newQuantity;
+    setBag(bagCopy);
   };
 
   const calcSubtotal = (price, quantity) => {
@@ -74,7 +78,9 @@ const Bag = () => {
                         quantity={product.quantity}
                         clickAdd={() => addOne(product)}
                         clickSubtract={() => removeOne(product)}
-                        changeQuantity={() => changeQuantity}
+                        onChange={(newQuantity) =>
+                          updateQuantity(product, newQuantity)
+                        }
                       />
                     </span>
                   </th>
