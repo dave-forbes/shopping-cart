@@ -1,5 +1,5 @@
 import { useState } from "react";
-import shopPhoto from "../assets/img/small/josiah-weiss-8sjBzL1IyMo-unsplash small.jpg";
+// import shopPhoto from "../assets/img/small/josiah-weiss-8sjBzL1IyMo-unsplash small.jpg";
 import ProductList from "../components/ProductList/ProductList";
 
 export default function Shop() {
@@ -7,7 +7,7 @@ export default function Shop() {
 
   return (
     <section>
-      <div className="shop-header">
+      {/* <div className="shop-header">
         <p className="shop-text">
           Embark on a journey with our exclusive collection of premium
           backpacks. Crafted with passion and precision, our backpacks
@@ -18,7 +18,7 @@ export default function Shop() {
           where style meets durability.
         </p>
         <img src={shopPhoto} />
-      </div>
+      </div> */}
       <nav className="shop-nav">
         <ul>
           <button
