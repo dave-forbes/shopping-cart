@@ -1,6 +1,6 @@
 import "./styles.css";
 import Logo from "./assets/svg/logo";
-import ShoppingBag from "./components/ShoppingBag.jsx/ShoppingBag";
+import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import { Link, Outlet } from "react-router-dom";
 import SignUp from "./components/SignUp/SignUp";
 import { useState, useEffect } from "react";
