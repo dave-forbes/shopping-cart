@@ -1,0 +1,61 @@
+.displayBag {
+  padding: 4rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.img {
+  width: 150px;
+  aspect-ratio: 1;
+}
+
+.h2, .tableContainer, .summary {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.h2 {
+  margin-block: 1rem;
+  
+}
+
+.table {
+  width: 100%;
+}
+
+.itemDesc {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.dividerContainer {
+  padding-block: 1rem;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.itemHeader {
+  text-align: left;
+}
+
+.summary {
+  display: flex;
+  background-color: rgb(231, 231, 231);
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  margin-block: 2rem;
+  padding: 2rem
+}
+
+.total {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
