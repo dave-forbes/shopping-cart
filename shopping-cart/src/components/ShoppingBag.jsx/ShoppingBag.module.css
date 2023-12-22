@@ -1,0 +1,29 @@
+.container {
+  position: absolute;
+  top: 15px;
+   right: 20px;
+   width: 50px;
+}
+
+.svg {
+  cursor: pointer;
+}
+
+.svg:hover {
+  fill: white;
+}
+
+.counter {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: -5px;
+}
