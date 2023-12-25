@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: var(--primary-color); */
+  background-color: rgba(255, 255, 255, 0.752);
+  position: relative;
+  /* top: 0;
+  z-index: 1; */
+  /* width: 100vw; */
+  padding-inline: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+}
+
+.header svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.header h1 {
+  font-family: 'Rubik Doodle Shadow';
+  font-size: 2.5rem;
+  margin-block: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.mainNav {
+  /* background-color: var(--secondary-color); */
+  flex-grow: 1;
+}
+
+.mainNav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.mainNav a {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.mainNav a:hover,
+.mainNav a:focus {
+  border-bottom: 4px solid black;
+}
