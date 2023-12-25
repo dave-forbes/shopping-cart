@@ -3,7 +3,7 @@ import styles from "./OurStory.module.css";
 
 const OurStory = () => {
   return (
-    <section>
+    <section className={styles.ourStorySection}>
       <div className={styles.content}>
         <img src={foundersPhoto} alt="Founders" className={styles.img} />
         <div className={styles.text}>

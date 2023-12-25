@@ -6,7 +6,7 @@ export default function Shop() {
   const [category, setCategory] = useState("all");
 
   return (
-    <section>
+    <section className={styles.shopSection}>
       <nav className={styles.nav}>
         <ul>
           <button
