@@ -1,9 +1,8 @@
 import "./styles.css";
-import Logo from "./assets/svg/logo";
-import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import { useState, useEffect } from "react";
+import Header from "./components/Header/Header";
 
 export default function App() {
   const [bag, setBag] = useState([]);
@@ -14,20 +13,7 @@ export default function App() {
 
   return (
     <>
-      <header>
-        <div className="header-title">
-          <h1>Backpack and Sack</h1>
-          <Logo />
-        </div>
-        <ShoppingBag bag={bag} />
-      </header>
-      <nav className="main-nav">
-        <ul>
-          <Link to="/">Home</Link>
-          <Link to="/shop">Shop</Link>
-          <Link to="/ourstory">Our story</Link>
-        </ul>
-      </nav>
+      <Header bag={bag} />
       <Outlet context={[bag, setBag]} />
       <Footer />
     </>
