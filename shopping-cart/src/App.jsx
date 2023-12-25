@@ -2,7 +2,7 @@ import "./styles.css";
 import Logo from "./assets/svg/logo";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import { Link, Outlet } from "react-router-dom";
-import Footer from "./components/footer/Footer";
+import Footer from "./components/Footer/Footer";
 import { useState, useEffect } from "react";
 
 export default function App() {
