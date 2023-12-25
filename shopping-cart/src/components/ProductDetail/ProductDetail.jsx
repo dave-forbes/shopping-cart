@@ -45,7 +45,7 @@ const ProductDetail = () => {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.productDetail}>
       <img className={styles.img} src={product.imgsrc}></img>
       <div className={styles.details}>
         <h2 className={styles.title}>{product.name}</h2>
