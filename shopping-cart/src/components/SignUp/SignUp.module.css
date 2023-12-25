@@ -1,0 +1,22 @@
+.signUp {
+  padding-block: 3rem;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUp input {
+  border: none;
+  padding: 0.5rem;
+  width: 250px;
+}
+
+.signUp button {
+  border: none;
+  padding: 0.5rem;
+  background-color: var(--footer-color);
+  border-radius: 0 5px 5px 0;
+  color: white;
+  cursor: pointer;
+}
