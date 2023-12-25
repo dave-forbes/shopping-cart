@@ -29,8 +29,8 @@ export default function App() {
         </ul>
       </nav>
       <Outlet context={[bag, setBag]} />
-      <SignUp />
       <footer>
+        <SignUp />
         <div className="info">
           <div>
             <h3>Customer Service</h3>
