@@ -2,7 +2,7 @@ import "./styles.css";
 import Logo from "./assets/svg/logo";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import { Link, Outlet } from "react-router-dom";
-import SignUp from "./components/SignUp/SignUp";
+import Footer from "./components/footer/Footer";
 import { useState, useEffect } from "react";
 
 export default function App() {
@@ -29,30 +29,7 @@ export default function App() {
         </ul>
       </nav>
       <Outlet context={[bag, setBag]} />
-      <footer>
-        <SignUp />
-        <div className="info">
-          <div>
-            <h3>Customer Service</h3>
-            <div className="links">
-              <a>Contact us</a>
-              <a>Shippng Details</a>
-              <a>Returns & Refunds</a>
-              <a>Terms of Service</a>
-              <a>Refund Policy</a>
-            </div>
-          </div>
-          <div>
-            <h3>Information</h3>
-            <div className="links">
-              <a>About us</a>
-              <a>Follow us</a>
-              <a>Blogs</a>
-            </div>
-          </div>
-        </div>
-        <p className="legal">BackpackandSack 2023 All Rights Reserved</p>
-      </footer>
+      <Footer />
     </>
   );
 }
