@@ -42,10 +42,12 @@ const Bag = () => {
     return total.toFixed(2);
   };
 
+  let bagtotal = bag.reduce((curr, acc) => curr + acc.quantity, 0);
+
   return (
     <section className={styles.displayBag}>
-      <h2 className={styles.h2}>Your Bag ({bag.length})</h2>
-      {bag.length === 0 ? (
+      <h2 className={styles.h2}>Your Bag ({bagtotal})</h2>
+      {bagtotal === 0 ? (
         <p className={styles.emptyBag}>Your bag is empty.</p>
       ) : (
         <div className={styles.tableContainer}>
