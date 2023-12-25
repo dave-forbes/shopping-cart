@@ -10,7 +10,11 @@ export default function ShoppingBag({ bag }) {
     <Link to="/bag">
       <div className={styles.container}>
         <ShoppingBagSVG className={styles.svg} />
-        {bagtotal > 0 && <div className={styles.counter}>{bagtotal}</div>}
+        <div
+          className={`${styles.counter} ${bagtotal > 0 ? styles.visible : ""}`}
+        >
+          {bagtotal}
+        </div>
       </div>
     </Link>
   );
