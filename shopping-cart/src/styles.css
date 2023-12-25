@@ -55,10 +55,10 @@ h6 {
 /* RESET */
 
 :root {
-  --primary-color: rgb(250, 224, 204);
-  --section-bg-color: rgb(255, 251, 248);
-  --secondary-color: rgb(209, 190, 175);
-  --footer-color:rgb(57, 53, 51);
+  --primary-color: #f3f3f3;
+  --section-bg-color: #fbf9f6;
+  --secondary-color: #cecece;
+  --footer-color:#363333;
 }
 
 #root {
@@ -67,7 +67,7 @@ h6 {
 }
 
 .hero {
-  height: 600px;
+  height: 700px;
   position: relative;
 }
 
@@ -104,6 +104,10 @@ li {
   list-style: none;
 }
 
+.main-nav {
+  background-color: var(--secondary-color);
+}
+
 .main-nav ul {
   display: flex;
   justify-content: space-around;
@@ -131,20 +135,6 @@ img {
   object-fit: cover;
   height: inherit;
   width: 100vw;
-}
-
-.info {
-  background-color: var(--secondary-color);
-  padding-block: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.legal {
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--footer-color);
-  color: white;
 }
 
 .links {
@@ -195,16 +185,24 @@ h3 {
 }
 
 .sign-up {
-  padding-block: 5rem;
+  padding-block: 3rem;
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* .focus {
-  background-color: black;
-  color:white;
-} */
+.info {
+  background-color: var(--secondary-color);
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.legal {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--footer-color);
+  color: white;
+}
 
