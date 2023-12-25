@@ -1,8 +1,4 @@
 .container {
-  /* position: absolute;
-  top: 15px;
-  right: 20px;
-  width: 50px; */
   position: relative;
   cursor: pointer;
   transition: transform 0.3s;
@@ -23,6 +19,6 @@
   place-content: center;
   color: white;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: -5px;
+  right: -5px;
 }
