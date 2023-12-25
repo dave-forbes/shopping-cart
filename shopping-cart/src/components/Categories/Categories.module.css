@@ -5,6 +5,10 @@
   background-color: var(--section-bg-color);
 }
 
+.wrapper {
+  position: relative;
+}
+
 .img {
   width: 400px;
   aspect-ratio: 1;
@@ -12,16 +16,17 @@
 
 .a {
   text-decoration: none;
-  background-color: lightgrey;
-  color: black;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
   padding: 1rem;
   border-radius: 5px;
   font-weight: 500;
 }
 
 .a:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .div {
@@ -30,4 +35,8 @@
   align-items: center;
   gap: 2rem;
   padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.405);
 }

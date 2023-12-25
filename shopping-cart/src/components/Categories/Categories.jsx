@@ -6,7 +6,7 @@ import styles from "./Categories.module.css";
 const Categories = () => {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.wrapper}>
         <img className={styles.img} src={everydayImage} />
         <div className={styles.div}>
           <h2>Shop everyday bags</h2>
@@ -15,7 +15,7 @@ const Categories = () => {
           </Link>
         </div>
       </div>
-      <div>
+      <div className={styles.wrapper}>
         <img className={styles.img} src={adventureImage} />
         <div className={styles.div}>
           <h2>Shop adventure bags</h2>
