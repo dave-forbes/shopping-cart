@@ -49,3 +49,14 @@
   gap: 1rem;
   align-items: center;
 }
+
+@media (max-width: 770px) {
+  .productDetail {
+    padding: 8rem 1rem 5rem 1rem;
+  } 
+  
+  .content {
+    gap: 3rem;
+  }
+  
+}
