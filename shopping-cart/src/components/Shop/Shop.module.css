@@ -2,6 +2,11 @@
   padding-top: 7rem;
 }
 
+.content { 
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
 .inventory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
