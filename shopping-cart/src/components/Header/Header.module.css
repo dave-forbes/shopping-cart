@@ -39,8 +39,14 @@
 
 @media (max-width: 500px) {
   .header h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
+
+  .header svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
 }
 
 li {
