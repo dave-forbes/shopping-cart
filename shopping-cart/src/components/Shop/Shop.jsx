@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductList from "../ProductList/ProductList";
 import styles from "./Shop.module.css";
+import { useLocation } from "react-router-dom";
 
 export default function Shop() {
   const [category, setCategory] = useState("all");
+
+  let { state } = useLocation();
+
+  useEffect(() => {
+    state ? setCategory(state.category) : setCategory("all");
+  }, [state]);
 
   return (
     <section className={styles.shopSection}>
