@@ -5,6 +5,8 @@
   align-items: center;
   justify-items: center;
   gap: 7rem;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .content p {
