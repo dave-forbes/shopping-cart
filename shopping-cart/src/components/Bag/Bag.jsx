@@ -2,9 +2,11 @@ import { useOutletContext } from "react-router-dom";
 import styles from "./Bag.module.css";
 import QuantitySelect from "../QuantitySelect/QuantitySelect";
 import Trash from "../../assets/svg/Trash";
+import { useEffect, useState } from "react";
 
 const Bag = () => {
   const [bag, setBag] = useOutletContext();
+  const [smallScreen, setSmallScreen] = useState(false);
 
   const removeFromBag = (product) => {
     const bagCopy = [...bag];
@@ -44,6 +46,16 @@ const Bag = () => {
 
   let bagtotal = bag.reduce((curr, acc) => curr + acc.quantity, 0);
 
+  const updateScreenSize = () => {
+    window.innerWidth < 770 ? setSmallScreen(true) : setSmallScreen(false);
+  };
+
+  useEffect(() => {
+    updateScreenSize();
+    window.addEventListener("resize", updateScreenSize);
+    return () => window.removeEventListener("resize", updateScreenSize);
+  });
+
   return (
     <section className={styles.displayBag}>
       <h2 className={styles.h2}>Your Bag ({bagtotal})</h2>
@@ -63,21 +75,25 @@ const Bag = () => {
             </thead>
             {bag.map((product) => (
               <tbody key={product.id} className={styles.item}>
-                <tr>
-                  <td colSpan="5" className={styles.dividerContainer}>
-                    <div className={styles.divider}></div>
-                  </td>
-                </tr>
+                {!smallScreen && (
+                  <tr>
+                    <td colSpan="5" className={styles.dividerContainer}>
+                      <div className={styles.divider}></div>
+                    </td>
+                  </tr>
+                )}
                 <tr>
                   <td className={styles.itemDesc}>
                     <img className={styles.img} src={product.imgsrc} />
                     <span className={styles.productName}>{product.name}</span>
                   </td>
-                  <th>
-                    <span className={styles.productPrice}>
-                      £{product.price}
-                    </span>
-                  </th>
+                  {!smallScreen && (
+                    <th>
+                      <span className={styles.productPrice}>
+                        £{product.price}
+                      </span>
+                    </th>
+                  )}
                   <th>
                     <span>
                       <QuantitySelect
@@ -96,9 +112,6 @@ const Bag = () => {
                     </span>
                   </th>
                   <th className={styles.remove}>
-                    {/* <button onClick={() => removeFromBag(product)}>
-                      Remove
-                    </button> */}
                     <div>
                       <Trash onClick={() => removeFromBag(product)} />
                     </div>
