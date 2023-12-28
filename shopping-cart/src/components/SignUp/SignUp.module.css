@@ -21,3 +21,14 @@
   color: white;
   cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  .signUp input {
+    width: 200px;
+  }
+
+  .signUp h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
