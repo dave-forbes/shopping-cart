@@ -8,9 +8,25 @@ import { useEffect, useState } from "react";
 
 const Header = ({ bag }) => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 900);
+  const [isTablet, setIsTablet] = useState(
+    window.innerWidth < 900 && window.innerWidth > 500
+  );
+  const [isPhone, setIsPhone] = useState(window.innerWidth < 500);
 
   const updateScreenSize = () => {
-    setIsDesktop(window.innerWidth > 900);
+    if (window.innerWidth > 900) {
+      setIsDesktop(true);
+      setIsTablet(false);
+      setIsPhone(false);
+    } else if (window.innerWidth < 900 && window.innerWidth > 500) {
+      setIsDesktop(false);
+      setIsTablet(true);
+      setIsPhone(false);
+    } else if (window.innerWidth < 500) {
+      setIsDesktop(false);
+      setIsTablet(false);
+      setIsPhone(true);
+    }
   };
 
   useEffect(() => {
@@ -23,36 +39,38 @@ const Header = ({ bag }) => {
       <div className={styles.content}>
         <div className={styles.headerTitle}>
           <h1>Backpack and Sack</h1>
-          <Logo />
+          {!isPhone && <Logo />}
         </div>
         {isDesktop ? (
-          <nav className={styles.mainNav}>
-            <ul>
-              <NavLink
-                className={({ isActive }) => (isActive ? styles.active : "")}
-                to="/"
-              >
-                Home
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? styles.active : "")}
-                to="/shop"
-              >
-                Shop
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? styles.active : "")}
-                to="/ourstory"
-              >
-                Our story
-              </NavLink>
-            </ul>
-          </nav>
+          <>
+            <nav className={styles.mainNav}>
+              <ul>
+                <NavLink
+                  className={({ isActive }) => (isActive ? styles.active : "")}
+                  to="/"
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) => (isActive ? styles.active : "")}
+                  to="/shop"
+                >
+                  Shop
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) => (isActive ? styles.active : "")}
+                  to="/ourstory"
+                >
+                  Our story
+                </NavLink>
+              </ul>
+            </nav>
+            <ShoppingBag bag={bag} />
+          </>
         ) : (
           ""
         )}
-        <ShoppingBag bag={bag} />
-        {!isDesktop && <BurgerMenu />}
+        {(isTablet || isPhone) && <BurgerMenu />}
       </div>
     </header>
   );
