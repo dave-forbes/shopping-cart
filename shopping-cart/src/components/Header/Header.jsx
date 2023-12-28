@@ -31,6 +31,8 @@ const Header = ({ bag }) => {
     }
   };
 
+  let bagtotal = bag.reduce((curr, acc) => curr + acc.quantity, 0);
+
   useEffect(() => {
     window.addEventListener("resize", updateScreenSize);
     return () => window.removeEventListener("resize", updateScreenSize);
@@ -75,6 +77,13 @@ const Header = ({ bag }) => {
         {(isTablet || isPhone) && (
           <div className={styles.burger} onClick={() => setShowMenu(true)}>
             <BurgerMenu />
+            <div
+              className={`${styles.counter} ${
+                bagtotal > 0 ? styles.visible : ""
+              }`}
+            >
+              {bagtotal}
+            </div>
           </div>
         )}
       </div>
@@ -110,11 +119,19 @@ const Header = ({ bag }) => {
                 Our story
               </NavLink>
               <NavLink
+                id={styles.bag}
                 className={({ isActive }) => (isActive ? styles.active : "")}
                 to="/bag"
                 onClick={() => setShowMenu(false)}
               >
                 Bag
+                <div
+                  className={`${styles.counter} ${
+                    bagtotal > 0 ? styles.visible : ""
+                  }`}
+                >
+                  {bagtotal}
+                </div>
               </NavLink>
             </ul>
           </nav>
