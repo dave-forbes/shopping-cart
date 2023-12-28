@@ -83,3 +83,49 @@ li {
 .mainNav a.active {
   border-bottom: 5px solid black;
 }
+
+.burger, .exit {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 50vh;
+  background-color: white;
+  z-index: 10;
+}
+
+.menuTitle {
+  display: flex;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  justify-content: space-around;
+}
+
+.menuNav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 3rem;
+}
+
+.menuNav a {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  transition: 0.1s;
+}
+.menuNav a:hover,
+.menuNav a:focus {
+  border-bottom: 5px solid black;
+}
+
+.menuNav a.active {
+  border-bottom: 5px solid black;
+}

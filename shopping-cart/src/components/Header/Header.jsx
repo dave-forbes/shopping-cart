@@ -1,6 +1,7 @@
 import Logo from "../../assets/svg/logo";
 import ShoppingBag from "../ShoppingBag/ShoppingBag";
 import BurgerMenu from "../../assets/svg/BurgerMenu";
+import Exit from "../../assets/svg/Exit";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 import PropTypes from "prop-types";
@@ -12,6 +13,7 @@ const Header = ({ bag }) => {
     window.innerWidth < 900 && window.innerWidth > 500
   );
   const [isPhone, setIsPhone] = useState(window.innerWidth < 500);
+  const [showmenu, setShowMenu] = useState(false);
 
   const updateScreenSize = () => {
     if (window.innerWidth > 900) {
@@ -70,8 +72,54 @@ const Header = ({ bag }) => {
         ) : (
           ""
         )}
-        {(isTablet || isPhone) && <BurgerMenu />}
+        {(isTablet || isPhone) && (
+          <div className={styles.burger} onClick={() => setShowMenu(true)}>
+            <BurgerMenu />
+          </div>
+        )}
       </div>
+      {showmenu && (
+        <div className={styles.menu}>
+          <div className={styles.menuTitle}>
+            <h1>Backpack and Sack</h1>
+            <div className={styles.exit} onClick={() => setShowMenu(false)}>
+              <Exit />
+            </div>
+          </div>
+          <nav className={styles.menuNav}>
+            <ul>
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.active : "")}
+                to="/"
+                onClick={() => setShowMenu(false)}
+              >
+                Home
+              </NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.active : "")}
+                to="/shop"
+                onClick={() => setShowMenu(false)}
+              >
+                Shop
+              </NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.active : "")}
+                to="/ourstory"
+                onClick={() => setShowMenu(false)}
+              >
+                Our story
+              </NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.active : "")}
+                to="/bag"
+                onClick={() => setShowMenu(false)}
+              >
+                Bag
+              </NavLink>
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
