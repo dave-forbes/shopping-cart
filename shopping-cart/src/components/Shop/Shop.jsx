@@ -18,19 +18,19 @@ export default function Shop() {
         <nav className={styles.nav}>
           <ul>
             <button
-              className={category === "all" ? styles.focus : ""}
+              className={category === "all" ? styles.active : ""}
               onClick={() => setCategory("all")}
             >
               All
             </button>
             <button
-              className={category === "everyday" ? styles.focus : ""}
+              className={category === "everyday" ? styles.active : ""}
               onClick={() => setCategory("everyday")}
             >
               Everyday
             </button>
             <button
-              className={category === "adventure" ? styles.focus : ""}
+              className={category === "adventure" ? styles.active : ""}
               onClick={() => setCategory("adventure")}
             >
               Adventure
