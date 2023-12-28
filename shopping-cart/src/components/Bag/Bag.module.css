@@ -60,6 +60,16 @@
   padding: 2rem
 }
 
+.summary button {
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .total {
   font-size: 1.5rem;
   font-weight: 600;
