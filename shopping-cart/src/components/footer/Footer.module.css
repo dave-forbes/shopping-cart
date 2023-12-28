@@ -30,3 +30,9 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 400px) {
+  .legal {
+    font-size: 0.8rem;
+  }
+}
