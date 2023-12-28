@@ -18,11 +18,22 @@ const shuffleArray = (array) => {
 const ProductList = ({ category }) => {
   const [shuffledProducts, setShuffledProducts] = useState([]);
   const [hover, setHover] = useState("");
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  const updateScreenSize = () => {
+    window.innerWidth < 770 ? setSmallScreen(true) : setSmallScreen(false);
+  };
 
   useEffect(() => {
     const shuffled = shuffleArray(productData);
     setShuffledProducts(shuffled);
   }, []);
+
+  useEffect(() => {
+    updateScreenSize();
+    window.addEventListener("resize", updateScreenSize);
+    return () => window.removeEventListener("resize", updateScreenSize);
+  });
 
   const filteredProducts = shuffledProducts.filter(
     (item) => item.category === category || category === "all"
@@ -39,9 +50,14 @@ const ProductList = ({ category }) => {
             className={styles.card}
           >
             <img className={styles.img} src={item.imgsrc} alt={item.name} />
-            <div className={hover === item.id ? styles.overlay : styles.hide}>
+            <div
+              className={
+                hover === item.id || smallScreen ? styles.overlay : styles.hide
+              }
+            >
               <p>{item.name}</p>
               <p>£{item.price}</p>
+              <button className={styles.moreInfo}>More Info</button>
             </div>
           </div>
         </Link>
