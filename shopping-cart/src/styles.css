@@ -54,12 +54,35 @@ h6 {
 
 /* RESET */
 
-:root {
-  --primary-color: #f3f3f3;
-  --section-bg-color: #fbf9f6;
-  --secondary-color: #cecece;
-  --footer-color:#363333;
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-color: #fff;
+    --section-bg-color: #fbf9f6;
+    --sign-up-color: #f1f1f1;
+    --info-color: #cecece;
+    --dark-button: black;
+    --light-button: white;
+    --legal-color:#363333;
+    --font-color: black;
+  }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header-color: #180c0c; /* Warmer dark header color */
+  --section-bg-color: #2b1f1f; /* Warmer dark background color for sections */
+  --sign-up-color: #3d2727; /* Warmer darker color for sign-up */
+  --info-color: #4e3838; /* Warmer darker gray for info */
+  --dark-button: #150d0d; /* Warmer black for dark buttons */
+  --light-button: #e1e1e1; /* Warmer gray for light buttons */
+  --legal-color: #5a5353; /* Warmer lighter color for legal text */
+  --font-color: #e0e0e0; /* Warmer white for text color */
+  }
+}
+
+
+
+
 
 #root {
   display: flex;
