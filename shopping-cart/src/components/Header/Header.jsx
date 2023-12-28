@@ -1,6 +1,6 @@
 import Logo from "../../assets/svg/logo";
 import ShoppingBag from "../ShoppingBag/ShoppingBag";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 import PropTypes from "prop-types";
 
@@ -13,9 +13,24 @@ const Header = ({ bag }) => {
       </div>
       <nav className={styles.mainNav}>
         <ul>
-          <Link to="/">Home</Link>
-          <Link to="/shop">Shop</Link>
-          <Link to="/ourstory">Our story</Link>
+          <NavLink
+            className={({ isActive }) => (isActive ? styles.active : "")}
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? styles.active : "")}
+            to="/shop"
+          >
+            Shop
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? styles.active : "")}
+            to="/ourstory"
+          >
+            Our story
+          </NavLink>
         </ul>
       </nav>
       <ShoppingBag bag={bag} />
