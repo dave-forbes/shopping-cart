@@ -11,6 +11,7 @@
   border: none;
   padding: 0.5rem;
   width: 250px;
+  border-radius: 5px 0  0 5px;
 }
 
 .signUp button {
