@@ -1,7 +1,7 @@
 [
   {
     "id": "5584",
-    "imgsrc": "/src/assets/img/small/adam-hornyak-7e-VK6U-3Fs-unsplash small.jpg",
+    "imgsrc": "/public/img/small/adam-hornyak-7e-VK6U-3Fs-unsplash small.jpg",
     "name": "Sunbeam Explorer Adventure Backpack",
     "category": "adventure",
     "price": 79.99,
@@ -9,7 +9,7 @@
   },
   {
     "id": "8429",
-    "imgsrc": "/src/assets/img/small/ali-kazal-9aZ3T1q83CM-unsplash small.jpg",
+    "imgsrc": "/public/img/small/ali-kazal-9aZ3T1q83CM-unsplash small.jpg",
     "name": "Emerald Peak Expedition Adventure Backpack",
     "category": "adventure",
     "price": 99.99,
@@ -17,7 +17,7 @@
   },
   {
     "id": "2490",
-    "imgsrc": "/src/assets/img/small/aniket-bhattacharya-VOvAl8bEOnE-unsplash small.jpg",
+    "imgsrc": "/public/img/small/aniket-bhattacharya-VOvAl8bEOnE-unsplash small.jpg",
     "name": "Mossy Glen Trekker Adventure Backpack",
     "category": "adventure",
     "price": 79.99,
@@ -25,7 +25,7 @@
   },
   {
     "id": "5962",
-    "imgsrc": "/src/assets/img/small/edgar-S1mSsru32QM-unsplash small.jpg",
+    "imgsrc": "/public/img/small/edgar-S1mSsru32QM-unsplash small.jpg",
     "name": "Stealth Slate Everyday Backpack",
     "category": "everyday",
     "price": 49.99,
@@ -33,7 +33,7 @@
   },
   {
     "id": "6095",
-    "imgsrc": "/src/assets/img/small/haupes-6hpJZcqWt4I-unsplash small.jpg",
+    "imgsrc": "/public/img/small/haupes-6hpJZcqWt4I-unsplash small.jpg",
     "name": "Forest Canopy Explorer Adventure Backpack",
     "category": "adventure",
     "price": 59.99,
@@ -41,7 +41,7 @@
   },
   {
     "id": "7901",
-    "imgsrc": "/src/assets/img/small/jason-garcia-X4ZM5AHXG70-unsplash small.jpg",
+    "imgsrc": "/public/img/small/jason-garcia-X4ZM5AHXG70-unsplash small.jpg",
     "name": "Charcoal Elegance Everyday Backpack",
     "category": "everyday",
     "price": 69.99,
@@ -49,7 +49,7 @@
   },
   {
     "id": "6643",
-    "imgsrc": "/src/assets/img/small/julie-dransfield-fDmtG32tP08-unsplash small.jpg",
+    "imgsrc": "/public/img/small/julie-dransfield-fDmtG32tP08-unsplash small.jpg",
     "name": "Everyday Azure Sky Backpack",
     "category": "everyday",
     "price": 59.99,
@@ -57,7 +57,7 @@
   },
   {
     "id": "7191",
-    "imgsrc": "/src/assets/img/small/luis-quintero-8TSqJoI-NVs-unsplash small.jpg",
+    "imgsrc": "/public/img/small/luis-quintero-8TSqJoI-NVs-unsplash small.jpg",
     "name": "Urban Shadow Everyday Backpack",
     "category": "everyday",
     "price": 49.99,
@@ -65,7 +65,7 @@
   },
   {
     "id": "9099",
-    "imgsrc": "/src/assets/img/small/oriol-pascual-l5VCmqQbP_g-unsplash small.jpg",
+    "imgsrc": "/public/img/small/oriol-pascual-l5VCmqQbP_g-unsplash small.jpg",
     "name": "Coastal Wave Adventure Backpack",
     "category": "adventure",
     "price": 59.99,
@@ -73,7 +73,7 @@
   },
   {
     "id": "7193",
-    "imgsrc": "/src/assets/img/small/pursuit-retro--miQCjAA3EY-unsplash small.jpg",
+    "imgsrc": "/public/img/small/pursuit-retro--miQCjAA3EY-unsplash small.jpg",
     "name": "Midnight Serenity Adventure Backpack",
     "category": "adventure",
     "price": 79.99,
@@ -81,7 +81,7 @@
   },
   {
     "id": "7550",
-    "imgsrc": "/src/assets/img/small/studio-crevettes-Ft3IiktwwzQ-unsplash small.jpg",
+    "imgsrc": "/public/img/small/studio-crevettes-Ft3IiktwwzQ-unsplash small.jpg",
     "name": "Nimbus Grey Compact Backpack",
     "category": "everyday",
     "price": 59.99,
@@ -89,7 +89,7 @@
   },
   {
     "id": "2353",
-    "imgsrc": "/src/assets/img/small/sun-lingyan-_H0fjILH5Vw-unsplash small.jpg",
+    "imgsrc": "/public/img/small/sun-lingyan-_H0fjILH5Vw-unsplash small.jpg",
     "name": "Navy Twilight Urban Backpack",
     "category": "everyday",
     "price": 49.99,
@@ -97,7 +97,7 @@
   },
   {
     "id": "6505",
-    "imgsrc": "/src/assets/img/small/wiser-by-the-mile-3o-X8WJOP5E-unsplash small.jpg",
+    "imgsrc": "/public/img/small/wiser-by-the-mile-3o-X8WJOP5E-unsplash small.jpg",
     "name": "Crimson Blaze Everyday Backpack",
     "category": "everyday",
     "price": 49.99,
