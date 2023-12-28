@@ -46,23 +46,25 @@ const ProductDetail = () => {
 
   return (
     <section className={styles.productDetail}>
-      <img className={styles.img} src={product.imgsrc}></img>
-      <div className={styles.details}>
-        <h2 className={styles.title}>{product.name}</h2>
-        <p>{product.description}</p>
-        <p className={styles.price}>£{product.price}</p>
-        <div className={styles.addToBag}>
-          <QuantitySelect
-            quantity={quantity}
-            clickAdd={() => setQuantity(quantity + 1)}
-            clickSubtract={() =>
-              quantity > 1 ? setQuantity(quantity - 1) : setQuantity(0)
-            }
-            onChange={(newQuantity) => updateQuantity(newQuantity)}
-          />
-          <button onClick={() => addToBag()} className={styles.button}>
-            Add to Bag
-          </button>
+      <div className={styles.content}>
+        <img className={styles.img} src={product.imgsrc}></img>
+        <div className={styles.details}>
+          <h2 className={styles.title}>{product.name}</h2>
+          <p>{product.description}</p>
+          <p className={styles.price}>£{product.price}</p>
+          <div className={styles.addToBag}>
+            <QuantitySelect
+              quantity={quantity}
+              clickAdd={() => setQuantity(quantity + 1)}
+              clickSubtract={() =>
+                quantity > 1 ? setQuantity(quantity - 1) : setQuantity(0)
+              }
+              onChange={(newQuantity) => updateQuantity(newQuantity)}
+            />
+            <button onClick={() => addToBag()} className={styles.button}>
+              Add to Bag
+            </button>
+          </div>
         </div>
       </div>
     </section>
