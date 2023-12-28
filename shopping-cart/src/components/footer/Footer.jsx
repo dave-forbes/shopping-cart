@@ -5,7 +5,7 @@ import Copyright from "../../assets/svg/Copyright";
 const Footer = () => {
   return (
     <footer>
-      <SignUp />
+      <SignUp onClick={() => alert("Thanks for signing up!")} />
       <div className={styles.info}>
         <div>
           <h3>Customer Service</h3>
