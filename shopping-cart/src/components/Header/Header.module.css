@@ -37,6 +37,12 @@
   margin-inline: 0.5rem;
 }
 
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+}
+
 li {
   list-style: none;
 }
