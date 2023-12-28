@@ -1,7 +1,10 @@
 .productDetail {
   padding: 10rem 4rem 4rem 4rem;
-  /* display: flex;
-  justify-content: center; */
+}
+
+.content {
+  max-width: 1000px;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
@@ -33,9 +36,6 @@
   border: none;
   transition: 0.3s;
   cursor: pointer;
-}
-
-.button:hover {
   background-color: black;
   color: white;
 }
