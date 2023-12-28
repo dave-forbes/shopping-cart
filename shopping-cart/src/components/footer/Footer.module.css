@@ -1,8 +1,9 @@
 .info {
-  background-color: var(--secondary-color);
+  background-color: var(--info-color);
   padding-block: 2rem;
   display: flex;
   justify-content: space-evenly;
+  color: var(--font-color);
 }
 
 .info h3 {
@@ -12,7 +13,7 @@
 .legal {
   text-align: center;
   padding: 1rem;
-  background-color: var(--footer-color);
+  background-color: var(--legal-color);
   color: white;
   display: flex;
   align-items: center;

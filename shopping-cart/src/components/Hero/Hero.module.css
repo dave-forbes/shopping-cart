@@ -19,7 +19,7 @@
 }
 
 .callToAction a {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--light-button);
   color: black;
   padding: 1rem;
   border-radius: 5px;

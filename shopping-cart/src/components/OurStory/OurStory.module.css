@@ -7,6 +7,7 @@
   gap: 7rem;
   max-width: 1200px;
   margin-inline: auto;
+  color: var(--font-color);
 }
 
 .content p {

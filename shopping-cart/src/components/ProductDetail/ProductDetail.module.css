@@ -10,6 +10,7 @@
   align-items: center;
   justify-items: center;
   gap: 7rem;
+  color: var(--font-color);
 }
 
 .img {
@@ -36,7 +37,7 @@
   border: none;
   transition: 0.3s;
   cursor: pointer;
-  background-color: black;
+  background-color: var(--dark-button);
   color: white;
 }
 

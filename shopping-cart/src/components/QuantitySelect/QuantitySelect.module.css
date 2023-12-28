@@ -10,6 +10,10 @@
   height: 2rem;
 }
 
+.container path, .container circle {
+  stroke: var(--font-color);
+}
+
 .container input {
   width: 2rem;
 }

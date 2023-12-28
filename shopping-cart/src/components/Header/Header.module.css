@@ -1,10 +1,11 @@
 .header {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--header-color);
   padding-inline: 1rem;
   position: fixed;
   width: 100%;
   z-index: 3;
   padding-block: 2rem;
+  color: var(--font-color)
 }
 
 .content {
@@ -29,6 +30,10 @@
 .headerTitle svg {
   width: 4rem;
   height: 4rem;
+}
+
+.header path {
+  stroke: var(--font-color);
 }
 
 .header h1 {
@@ -71,17 +76,17 @@ li {
   padding: 1rem;
   font-weight: 500;
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
   transition: 0.1s;
 }
 
 .mainNav a:hover,
 .mainNav a:focus {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--font-color);
 }
 
 .mainNav a.active {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--font-color);
 }
 
 .burger, .exit {

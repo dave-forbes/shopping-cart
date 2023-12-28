@@ -1,5 +1,6 @@
 .displayBag {
   padding: 8rem 4rem 4rem 4rem;
+  color:var(--font-color);
 }
 
 .product {
@@ -57,14 +58,15 @@
   gap: 3rem;
   align-items: center;
   margin-block: 2rem;
-  padding: 2rem
+  padding: 2rem;
+  color: var(--dark-button);
 }
 
 .summary button {
   border: none;
   padding: 1rem;
   border-radius: 5px;
-  background-color: black;
+  background-color: var(--dark-button);
   color: white;
   cursor: pointer;
   font-weight: 600;
@@ -96,7 +98,7 @@
   }
 
   .table thead {
-    display: none; /* Hide the table header on mobile */
+    display: none; 
   }
 
   .table tbody {
@@ -135,7 +137,7 @@
   }
 
   .itemDesc img {
-    max-width: 50px; /* Adjust the maximum image width as needed */
+    max-width: 50px;
     margin-right: 10px;
   }
 
@@ -144,7 +146,7 @@
   }
 
   .dividerContainer {
-    display: none; /* Hide the divider on mobile */
+    display: none;
   }
 
   .summary {
