@@ -9,26 +9,24 @@ const Categories = () => {
       <div className={styles.wrapper}>
         <img className={styles.img} src={everydayImage} />
         <div className={styles.div}>
-          <h2>Shop everyday bags</h2>
           <Link
             className={styles.a}
             to="/shop"
             state={{ category: "everyday" }}
           >
-            Shop now
+            Shop everyday bags
           </Link>
         </div>
       </div>
       <div className={styles.wrapper}>
         <img className={styles.img} src={adventureImage} />
         <div className={styles.div}>
-          <h2>Shop adventure bags</h2>
           <Link
             className={styles.a}
             to="/shop"
             state={{ category: "adventure" }}
           >
-            Shop now
+            Shop adventure bags
           </Link>
         </div>
       </div>
