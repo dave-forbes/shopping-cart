@@ -87,7 +87,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
   .displayBag {
     padding: 8rem 0.5rem 0.5rem 0.5rem;
   }
@@ -160,7 +160,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .table tr {
     display: block;
   }

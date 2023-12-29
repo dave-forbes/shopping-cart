@@ -42,7 +42,7 @@
   margin-inline: 0.5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header h1 {
     font-size: 1.4rem;
   }
