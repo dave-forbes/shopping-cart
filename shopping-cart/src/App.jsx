@@ -36,7 +36,7 @@ export default function App() {
   return (
     <>
       <Header screenSize={screenSize} bag={bag} bagTotal={bagTotal} />
-      <Outlet context={[bag, setBag, screenSize]} />
+      <Outlet context={[bag, setBag, screenSize, bagTotal]} />
       <Footer />
     </>
   );

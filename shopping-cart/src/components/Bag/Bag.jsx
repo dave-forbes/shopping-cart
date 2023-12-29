@@ -4,7 +4,7 @@ import QuantitySelect from "../QuantitySelect/QuantitySelect";
 import Trash from "../../assets/svg/Trash";
 
 const Bag = () => {
-  const [bag, setBag, screenSize] = useOutletContext();
+  const [bag, setBag, screenSize, bagTotal] = useOutletContext();
 
   const removeFromBag = (product) => {
     const bagCopy = [...bag];
@@ -42,12 +42,10 @@ const Bag = () => {
     return total.toFixed(2);
   };
 
-  let bagtotal = bag.reduce((curr, acc) => curr + acc.quantity, 0);
-
   return (
     <section className={styles.displayBag}>
-      <h2 className={styles.h2}>Your Bag ({bagtotal})</h2>
-      {bagtotal === 0 ? (
+      <h2 className={styles.h2}>Your Bag ({bagTotal})</h2>
+      {bagTotal === 0 ? (
         <p className={styles.emptyBag}>Your bag is empty.</p>
       ) : (
         <div className={styles.tableContainer}>
@@ -114,7 +112,7 @@ const Bag = () => {
         <p className={styles.total}>
           Order Total: £
           {bag
-            .reduce((curr, acc) => curr + acc.price * acc.quantity, 0)
+            .reduce((acc, curr) => acc + curr.price * curr.quantity, 0)
             .toFixed(2)}
         </p>
         <button
