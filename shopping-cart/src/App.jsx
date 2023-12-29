@@ -18,14 +18,12 @@ export default function App() {
     let screenSizeCopy = { ...screenSize };
     if (window.innerWidth > 900) {
       screenSizeCopy = { desktop: true, tablet: false, mobile: false };
-      setScreenSize(screenSizeCopy);
     } else if (window.innerWidth < 900 && window.innerWidth > 500) {
       screenSizeCopy = { desktop: false, tablet: true, mobile: false };
-      setScreenSize(screenSizeCopy);
     } else if (window.innerWidth < 500) {
       screenSizeCopy = { desktop: false, tablet: false, mobile: true };
-      setScreenSize(screenSizeCopy);
     }
+    setScreenSize(screenSizeCopy);
   };
 
   useEffect(() => {
