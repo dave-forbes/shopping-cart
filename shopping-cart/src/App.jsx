@@ -6,15 +6,35 @@ import Header from "./components/Header/Header";
 
 export default function App() {
   const [bag, setBag] = useState([]);
+  const [screenSize, setScreenSize] = useState({
+    desktop: true,
+    tablet: false,
+    mobile: false,
+  });
+
+  const updateScreenSize = () => {
+    let screenSizeCopy = { ...screenSize };
+    if (window.innerWidth > 900) {
+      screenSizeCopy = { desktop: true, tablet: false, mobile: false };
+      setScreenSize(screenSizeCopy);
+    } else if (window.innerWidth < 900 && window.innerWidth > 500) {
+      screenSizeCopy = { desktop: false, tablet: true, mobile: false };
+      setScreenSize(screenSizeCopy);
+    } else if (window.innerWidth < 500) {
+      screenSizeCopy = { desktop: false, tablet: false, mobile: true };
+      setScreenSize(screenSizeCopy);
+    }
+  };
 
   useEffect(() => {
-    console.log(bag);
-  }, [bag]);
+    window.addEventListener("resize", updateScreenSize);
+    return () => window.removeEventListener("resize", updateScreenSize);
+  });
 
   return (
     <>
-      <Header bag={bag} />
-      <Outlet context={[bag, setBag]} />
+      <Header screenSize={screenSize} bag={bag} />
+      <Outlet context={[bag, setBag, screenSize]} />
       <Footer />
     </>
   );

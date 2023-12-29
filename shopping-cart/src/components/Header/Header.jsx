@@ -5,36 +5,12 @@ import Exit from "../../assets/svg/Exit";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-const Header = ({ bag }) => {
+const Header = ({ bag, screenSize }) => {
   const [showmenu, setShowMenu] = useState(false);
-  const [screenSize, setScreenSize] = useState({
-    desktop: true,
-    tablet: false,
-    mobile: false,
-  });
-
-  const updateScreenSize = () => {
-    let screenSizeCopy = { ...screenSize };
-    if (window.innerWidth > 900) {
-      screenSizeCopy = { desktop: true, tablet: false, mobile: false };
-      setScreenSize(screenSizeCopy);
-    } else if (window.innerWidth < 900 && window.innerWidth > 500) {
-      screenSizeCopy = { desktop: false, tablet: true, mobile: false };
-      setScreenSize(screenSizeCopy);
-    } else if (window.innerWidth < 500) {
-      screenSizeCopy = { desktop: false, tablet: false, mobile: true };
-      setScreenSize(screenSizeCopy);
-    }
-  };
 
   let bagtotal = bag.reduce((curr, acc) => curr + acc.quantity, 0);
-
-  useEffect(() => {
-    window.addEventListener("resize", updateScreenSize);
-    return () => window.removeEventListener("resize", updateScreenSize);
-  });
 
   return (
     <header className={styles.header}>
@@ -141,6 +117,7 @@ const Header = ({ bag }) => {
 
 Header.propTypes = {
   bag: PropTypes.array,
+  screenSize: PropTypes.object,
 };
 
 export default Header;
