@@ -15,25 +15,14 @@ const shuffleArray = (array) => {
   return arrayCopy;
 };
 
-const ProductList = ({ category }) => {
+const ProductList = ({ category, screenSize }) => {
   const [shuffledProducts, setShuffledProducts] = useState([]);
   const [hover, setHover] = useState("");
-  const [smallScreen, setSmallScreen] = useState(false);
-
-  const updateScreenSize = () => {
-    window.innerWidth < 770 ? setSmallScreen(true) : setSmallScreen(false);
-  };
 
   useEffect(() => {
     const shuffled = shuffleArray(productData);
     setShuffledProducts(shuffled);
   }, []);
-
-  useEffect(() => {
-    updateScreenSize();
-    window.addEventListener("resize", updateScreenSize);
-    return () => window.removeEventListener("resize", updateScreenSize);
-  });
 
   const filteredProducts = shuffledProducts.filter(
     (item) => item.category === category || category === "all"
@@ -52,7 +41,9 @@ const ProductList = ({ category }) => {
             <img className={styles.img} src={item.imgsrc} alt={item.name} />
             <div
               className={
-                hover === item.id || smallScreen ? styles.overlay : styles.hide
+                hover === item.id || !screenSize.desktop
+                  ? styles.overlay
+                  : styles.hide
               }
             >
               <p>{item.name}</p>
@@ -68,6 +59,7 @@ const ProductList = ({ category }) => {
 
 ProductList.propTypes = {
   category: PropTypes.string,
+  screenSize: PropTypes.object,
 };
 
 export default ProductList;

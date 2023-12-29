@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import ProductList from "../ProductList/ProductList";
 import styles from "./Shop.module.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useOutletContext } from "react-router-dom";
 
 export default function Shop() {
   const [category, setCategory] = useState("all");
+  const [, , screenSize] = useOutletContext();
 
   let { state } = useLocation();
 
@@ -38,7 +39,7 @@ export default function Shop() {
           </ul>
         </nav>
         <div className={styles.inventory}>
-          <ProductList category={category} />
+          <ProductList category={category} screenSize={screenSize} />
         </div>
       </div>
     </section>
