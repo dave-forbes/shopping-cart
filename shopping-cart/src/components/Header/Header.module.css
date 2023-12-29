@@ -103,7 +103,8 @@ li {
   left:0;
   width:100vw;
   height: 70vh;
-  background-color: white;
+  background-color: var(--header-color);
+  color: var(--font-color);
   z-index: 10;
 }
 
