@@ -98,7 +98,12 @@ const Bag = () => {
                     </span>
                   </th>
                   <th className={styles.remove}>
-                    <div>
+                    <div
+                      tabIndex="0"
+                      onKeyDown={(e) =>
+                        e.key === "Enter" ? removeFromBag(product) : ""
+                      }
+                    >
                       <Trash onClick={() => removeFromBag(product)} />
                     </div>
                   </th>
@@ -116,7 +121,13 @@ const Bag = () => {
             .toFixed(2)}
         </p>
         <button
-          onClick={() => alert("Thanks for shopping with Backpack and Sack!")}
+          onClick={() =>
+            bagTotal !== 0
+              ? alert("Thanks for shopping with Backpack and Sack!")
+              : alert(
+                  "No items in bag, please vist our shop before checking out!"
+                )
+          }
         >
           Checkout
         </button>
