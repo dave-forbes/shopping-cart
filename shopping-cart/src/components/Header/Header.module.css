@@ -93,6 +93,10 @@ li {
   cursor: pointer;
 }
 
+.exit svg {
+  fill: var(--font-color);
+}
+
 .burger, #bag {
   position: relative;
 }
