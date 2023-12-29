@@ -129,16 +129,16 @@ li {
   padding: 1rem;
   font-weight: 500;
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
   transition: 0.1s;
 }
 .menuNav a:hover,
 .menuNav a:focus {
-  border-left: 5px solid black;
+  border-left: 5px solid var(--font-color);
 }
 
 .menuNav a.active {
-  border-left: 5px solid black;
+  border-left: 5px solid var(--font-color);
 }
 
 .counter {
