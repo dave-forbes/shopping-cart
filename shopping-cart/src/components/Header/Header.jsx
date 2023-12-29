@@ -8,26 +8,24 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
 const Header = ({ bag }) => {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 900);
-  const [isTablet, setIsTablet] = useState(
-    window.innerWidth < 900 && window.innerWidth > 500
-  );
-  const [isPhone, setIsPhone] = useState(window.innerWidth < 500);
   const [showmenu, setShowMenu] = useState(false);
+  const [screenSize, setScreenSize] = useState({
+    desktop: true,
+    tablet: false,
+    mobile: false,
+  });
 
   const updateScreenSize = () => {
+    let screenSizeCopy = { ...screenSize };
     if (window.innerWidth > 900) {
-      setIsDesktop(true);
-      setIsTablet(false);
-      setIsPhone(false);
+      screenSizeCopy = { desktop: true, tablet: false, mobile: false };
+      setScreenSize(screenSizeCopy);
     } else if (window.innerWidth < 900 && window.innerWidth > 500) {
-      setIsDesktop(false);
-      setIsTablet(true);
-      setIsPhone(false);
+      screenSizeCopy = { desktop: false, tablet: true, mobile: false };
+      setScreenSize(screenSizeCopy);
     } else if (window.innerWidth < 500) {
-      setIsDesktop(false);
-      setIsTablet(false);
-      setIsPhone(true);
+      screenSizeCopy = { desktop: false, tablet: false, mobile: true };
+      setScreenSize(screenSizeCopy);
     }
   };
 
@@ -43,9 +41,9 @@ const Header = ({ bag }) => {
       <div className={styles.content}>
         <div className={styles.headerTitle}>
           <h1>Backpack and Sack</h1>
-          {!isPhone && <Logo />}
+          {!screenSize.mobile && <Logo />}
         </div>
-        {isDesktop ? (
+        {screenSize.desktop ? (
           <>
             <nav className={styles.mainNav}>
               <ul>
@@ -74,7 +72,7 @@ const Header = ({ bag }) => {
         ) : (
           ""
         )}
-        {(isTablet || isPhone) && (
+        {(screenSize.tablet || screenSize.mobile) && (
           <div className={styles.burger} onClick={() => setShowMenu(true)}>
             <BurgerMenu />
             <div
