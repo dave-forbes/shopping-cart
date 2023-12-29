@@ -31,11 +31,12 @@ const ProductList = ({ category, screenSize }) => {
   return (
     <>
       {filteredProducts.map((item) => (
-        <Link to={`/products/${item.id}`} key={item.id}>
+        <Link tabIndex="-1" to={`/products/${item.id}`} key={item.id}>
           <div
             key={item.id}
             onMouseEnter={() => setHover(item.id)}
             onMouseLeave={() => setHover("")}
+            onFocus={() => setHover(item.id)}
             className={styles.card}
           >
             <img className={styles.img} src={item.imgsrc} alt={item.name} />
