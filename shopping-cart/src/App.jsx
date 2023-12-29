@@ -1,7 +1,7 @@
 import "./styles.css";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/footer/Footer";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Header from "./components/Header/Header";
 
 export default function App() {
@@ -12,7 +12,9 @@ export default function App() {
     mobile: false,
   });
 
-  const bagTotal = bag.reduce((acc, curr) => acc + curr.quantity, 0);
+  const bagTotal = useMemo(() => {
+    return bag.reduce((acc, curr) => acc + curr.quantity, 0);
+  }, [bag]);
 
   const updateScreenSize = () => {
     let screenSizeCopy = { ...screenSize };
