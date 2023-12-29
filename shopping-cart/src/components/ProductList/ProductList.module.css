@@ -16,12 +16,14 @@
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s;
+  gap: 1rem;
+  padding-inline: 1rem;
 }
 
 .overlay p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .moreInfo {
@@ -42,7 +44,7 @@
   object-fit: cover;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
 
   .overlay {
     position: static;
@@ -50,8 +52,8 @@
 
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .moreInfo {
     margin-bottom: 1rem;
   }
-}
+} */
