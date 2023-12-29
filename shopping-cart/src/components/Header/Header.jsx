@@ -7,10 +7,8 @@ import styles from "./Header.module.css";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-const Header = ({ bag, screenSize }) => {
+const Header = ({ bag, screenSize, bagTotal }) => {
   const [showmenu, setShowMenu] = useState(false);
-
-  let bagtotal = bag.reduce((curr, acc) => curr + acc.quantity, 0);
 
   return (
     <header className={styles.header}>
@@ -43,7 +41,7 @@ const Header = ({ bag, screenSize }) => {
                 </NavLink>
               </ul>
             </nav>
-            <ShoppingBag bag={bag} />
+            <ShoppingBag bag={bag} bagTotal={bagTotal} />
           </>
         ) : (
           ""
@@ -53,10 +51,10 @@ const Header = ({ bag, screenSize }) => {
             <BurgerMenu />
             <div
               className={`${styles.counter} ${
-                bagtotal > 0 ? styles.visible : ""
+                bagTotal > 0 ? styles.visible : ""
               }`}
             >
-              {bagtotal}
+              {bagTotal}
             </div>
           </div>
         )}
@@ -101,10 +99,10 @@ const Header = ({ bag, screenSize }) => {
                 Bag
                 <div
                   className={`${styles.counter} ${
-                    bagtotal > 0 ? styles.visible : ""
+                    bagTotal > 0 ? styles.visible : ""
                   }`}
                 >
-                  {bagtotal}
+                  {bagTotal}
                 </div>
               </NavLink>
             </ul>
@@ -118,6 +116,7 @@ const Header = ({ bag, screenSize }) => {
 Header.propTypes = {
   bag: PropTypes.array,
   screenSize: PropTypes.object,
+  bagTotal: PropTypes.number,
 };
 
 export default Header;

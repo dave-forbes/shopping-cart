@@ -3,17 +3,15 @@ import ShoppingBagSVG from "../../assets/svg/ShoppingBagSVG";
 import styles from "./ShoppingBag.module.css";
 import { Link } from "react-router-dom";
 
-export default function ShoppingBag({ bag }) {
-  let bagtotal = bag.reduce((curr, acc) => curr + acc.quantity, 0);
-
+export default function ShoppingBag({ bagTotal }) {
   return (
     <Link to="/bag">
       <div className={styles.container}>
         <ShoppingBagSVG className={styles.svg} />
         <div
-          className={`${styles.counter} ${bagtotal > 0 ? styles.visible : ""}`}
+          className={`${styles.counter} ${bagTotal > 0 ? styles.visible : ""}`}
         >
-          {bagtotal}
+          {bagTotal}
         </div>
       </div>
     </Link>
@@ -21,5 +19,5 @@ export default function ShoppingBag({ bag }) {
 }
 
 ShoppingBag.propTypes = {
-  bag: PropTypes.array,
+  bagTotal: PropTypes.number,
 };

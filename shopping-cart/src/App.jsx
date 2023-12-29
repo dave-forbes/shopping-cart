@@ -12,6 +12,8 @@ export default function App() {
     mobile: false,
   });
 
+  const bagTotal = bag.reduce((acc, curr) => acc + curr.quantity, 0);
+
   const updateScreenSize = () => {
     let screenSizeCopy = { ...screenSize };
     if (window.innerWidth > 900) {
@@ -33,7 +35,7 @@ export default function App() {
 
   return (
     <>
-      <Header screenSize={screenSize} bag={bag} />
+      <Header screenSize={screenSize} bag={bag} bagTotal={bagTotal} />
       <Outlet context={[bag, setBag, screenSize]} />
       <Footer />
     </>
