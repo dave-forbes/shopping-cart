@@ -27,7 +27,7 @@
   height: 3rem;
 }
 
-.headerTitle svg {
+.headerTitle svg, .menuTitle svg {
   width: 4rem;
   height: 4rem;
 }
@@ -117,11 +117,18 @@ li {
   z-index: 10;
 }
 
-.menuTitle {
+.menuContent {
   display: flex;
   padding-block: 2rem;
-  padding-inline: 1rem;
+  padding-inline: 0.5rem;
   justify-content: space-around;
+  align-items: center;
+}
+
+.menuTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuNav ul {

@@ -61,8 +61,11 @@ const Header = ({ bag, screenSize, bagTotal }) => {
       </div>
       {showmenu && (
         <div className={styles.menu}>
-          <div className={styles.menuTitle}>
-            <h1>Backpack and Sack</h1>
+          <div className={styles.menuContent}>
+            <div className={styles.menuTitle}>
+              <h1>Backpack and Sack</h1>
+              {!screenSize.mobile && <Logo />}
+            </div>
             <div className={styles.exit} onClick={() => setShowMenu(false)}>
               <Exit />
             </div>
